@@ -57,7 +57,10 @@ async function compressImage(file, filename) {
 	], {
 		destination: 'results/imagemin',
 		plugins: [
-			imageminJpegRecompress()
+			imageminJpegRecompress({
+				quality: 'high',
+				min: 60
+			})
 		]
 	});
 	const end = new Date() - start;
