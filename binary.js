@@ -53,7 +53,7 @@ fs.readdir(directoryPath, async function (err, files) {
 
 async function compressImage(file, filename) {
 	const start = new Date();
-	execFileSync(jpegRecompress, ['--quality high', '--min 60', file, path.join(__dirname, `results/binary/${filename}`)]);
+	execFileSync(jpegRecompress, ['--quality', 'high', '--min', 60, '--quiet', '--strip', file, path.join(__dirname, `results/binary/${filename}`)]);
 	const end = new Date() - start;
 
 	console.log(`Images optimized: ${filename} - Time: ${end}`);
