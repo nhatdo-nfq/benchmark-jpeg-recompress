@@ -1,0 +1,19 @@
+{
+  "name": "benchmark-jpeg-recompress",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "binary": "node binary.js",
+    "imagemin": "node imagemin.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "imagemin": "^7.0.1",
+    "imagemin-jpeg-recompress": "git+https://github.com/OpenSourceCommerce/imagemin-jpeg-recompress.git",
+    "jpeg-recompress-bin": "git+https://github.com/OpenSourceCommerce/jpeg-recompress-bin.git#develop"
+  }
+}
